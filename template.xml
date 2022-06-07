@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="stylesheet.xsl"?>
+<TEI><!-- For some reason, the Firefox XSLT processor balks when the TEI namespace is included. Add/remove xmlns="http://www.tei-c.org/ns/1.0" inside the start tag for transformations. -->
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Bleak House / by Charles Dickens ; with illustrations by H.K. Browne</title>
+            <respStmt><resp>encoded by</resp> <name xml:id="my-initials">My Name</name></respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>British Library</distributor> 
+            <idno type="shelfmark">C.58.f.21.</idno>
+            <idno type="UIN">BLL01000931211</idno>
+            <idno type="URI">https://www.bl.uk/collection-items/charles-dickens-bleak-house</idno>
+            <availability>
+               <p>Public Domain</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>Dickens, Charles. Bleak House. Illustrated by H. K. Browne. London: Bradbury &amp; Evans, 1853.</bibl>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <div>
+            <pb n="1" facs="figs/dickens-bleak-house-C_58_f_21-0001.jpeg"/>
+         </div>
+         <div>
+            <pb n="7" facs="figs/dickens-bleak-house-C_58_f_21-0007.jpeg"/>
+            <lb/>
+            <figure>
+               <graphic url="figs/bh-frontispiece.png"/>
+               <figDesc>The frontispiece illustrates...</figDesc>
+            </figure>
+            <p>This is text that needs to be explained,<ref target="#fn1" type="noteAnchor"><hi
+                     rend="superscript">1</hi></ref> and some other text after it.</p>
+            <note xml:id="fn1" type="footnote" n="1" resp="#fg">This is the explanation you were
+               looking for.</note>
+         </div>
+      </front>
+      <body>
+         <div type="chapter" n="1">
+            <pb n="23"/>
+            <head>CHAPTER I. IN CHANCERY.</head>
+            <p>LONDON. Michaelmas Term lately over, and the Lord Chancellor sitting in Lincoln's Inn
+               Hall. Implacable November weather. As much mud in the streets, as if the waters ahd
+               but newly retired from the face of the earth, and it would not be wonderful to meet a
+               Megalosaurus, forty feet long or so, waddling like an elephantine lizard up
+               Holborn-hill.</p>
+         </div>
+      </body>
+      <back>
+         <div>
+            <pb n="78" facs="figs/dickens-bleak-house-C_58_f_21-0078.jpeg"/>
+         </div>
+         <div>
+            <pb n="83" facs="figs/dickens-bleak-house-C_58_f_21-0083.jpeg"/>
+         </div>
+      </back>
+   </text>
+</TEI>
